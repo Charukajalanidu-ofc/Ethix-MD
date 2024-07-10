@@ -12,7 +12,7 @@ import {
     useMultiFileAuthState,
     getAggregateVotesInPollMessage
 } from '@whiskeysockets/baileys';
-import { Handler, Callupdate, GroupUpdate } from './event/index.js';
+import { Handler, Callupdate, GroupUpdate } from './src/event/index.js';
 import { Boom } from '@hapi/boom';
 import express from 'express';
 import pino from 'pino';
@@ -25,8 +25,8 @@ import moment from 'moment-timezone';
 import axios from 'axios';
 import fetch from 'node-fetch';
 import * as os from 'os';
-import config from '../config.cjs';
-import pkg from '../lib/autoreact.cjs';
+import config from './config.cjs';
+import pkg from './lib/autoreact.cjs';
 const { emojis, doReact } = pkg;
 
 const sessionName = "session";
